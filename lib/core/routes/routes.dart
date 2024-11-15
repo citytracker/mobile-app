@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:minhacidademeuproblema/pages/page_inicial.dart';
 import 'package:minhacidademeuproblema/pages/page_map_problems.dart';
-
+import 'package:minhacidademeuproblema/pages/page_problem.dart';
+import 'package:minhacidademeuproblema/pages/page_problem_form.dart';
 import 'package:minhacidademeuproblema/pages/page_signin.dart';
 import 'package:minhacidademeuproblema/pages/page_signup.dart';
 
@@ -12,6 +13,8 @@ class Routes {
       "/login": (context) => const PageSignIn(),
       "/cadastro": (context) => const PageSignUp(),
       "/map": (context) => const PageMapProblems(),
+      "/problema": (context) => const PageProblem(),
+      "/problema_form": (context) => const PageProblemForm(),
     };
   }
 }
