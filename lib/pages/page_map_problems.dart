@@ -5,6 +5,7 @@ import 'package:latlong2/latlong.dart';
 import 'package:minhacidademeuproblema/core/utils/utils.dart';
 import 'package:minhacidademeuproblema/domain/data/problem.dart';
 import 'package:minhacidademeuproblema/services/service_problem.dart';
+import 'package:minhacidademeuproblema/widgets/problem_map.dart';
 
 class PageMapProblems extends StatefulWidget {
   const PageMapProblems({super.key});
@@ -95,7 +96,7 @@ class _PageMapProblemsState extends State<PageMapProblems> {
                           builder: (p0, p1) {
                             var item = (p1.key as ObjectKey).value as Problem;
 
-                            throw Exception("Not implemented!");
+                            return ProblemMap(problem: item);
                           },
                         )),
                   )
